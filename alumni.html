@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumni Directory</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>College Alumni</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="alumni.html">Alumni</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="alumni-directory">
+      <h2>Our Alumni</h2>
+      <input type="text" id="search-bar" placeholder="Search alumni by name or year..." onkeyup="filterAlumni()">
+
+      <div class="alumni-cards">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1541752171745-4176eee47556?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="Alumni Photo">
+          <h3>Aarav Sharma</h3>
+          <p>Class of 2015</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="Alumni Photo">
+          <h3>Priya Gupta</h3>
+          <p>Class of 2010</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1557862921-37829c" alt="Alumni Photo">
+          <h3>Ravi Patel</h3>
+          <p>Class of 2012</p>
+        </div>
+        
+      </div>
+
+      <table id="alumni-list">
+        <tr>
+          <th>Name</th>
+          <th>Year</th>
+          <th>email</th>
+          <th>phone</th>
+          <th>current position</th>
+          <th>current company</th>
+          <th>education</th>
+
+        </tr>
+        <tr>
+          <td>Aarav Sharma</td>
+          <td>2015</td>
+          <td>aarav@example.com</td>
+          <td>9876543210</td>
+          <td>Software Engineer</td>
+          <td>ABC Inc.</td>
+          <td>B.Tech, Computer Science</td>
+        </tr>
+        <tr>
+          <td>Priya Gupta</td>
+          <td>2010</td>
+          <td>priya@example.com</td>
+          <td>9123456780</td>
+          <td>Marketing Manager</td>
+          <td>XYZ Corp.</td>
+          <td>B.A., Business Administration</td>
+        </tr>
+        <tr>
+          <td>Ravi Patel</td>
+          <td>2012</td>
+          <td>ravi@example.com</td>
+          <td>9876123456</td>
+          <td>Data Analyst</td>
+          <td>Data Solutions</td>
+          <td>M.Sc., Statistics</td>
+        </tr>
+        <tr>
+          <td>Neha Singh</td>
+          <td>2018</td>
+          <td>neha@example.com</td>
+          <td>9801234567</td>
+          <td>Project Manager</td>
+          <td>Innovate Inc.</td>
+          <td>M.Tech, Information Technology</td>
+        </tr>
+        <tr>
+          <td>Rahul Verma</td>
+          <td>2019</td>
+          <td>rahul@example.com</td>
+          <td>9678901234</td>
+          <td>Consultant</td>
+          <td>Consulting Group</td>
+          <td>B.Com, Commerce</td>
+        </tr>
+        <tr>
+          <td>Sneha Reddy</td>
+          <td>2020</td>
+          <td>sneha@example.com</td>
+          <td>9654321098</td>
+          <td>HR Executive</td>
+          <td>HR Services</td>
+          <td>BBA, Human Resources</td>
+        </tr>
+        <tr>
+          <td>Vikram Jain</td>
+          <td>2021</td>
+          <td>vikram@example.com</td>
+          <td>9543216789</td>
+          <td>Software Developer</td>
+          <td>Tech Innovations</td>
+          <td>B.Sc., Computer Science</td>
+        </tr>
+      </table>
+<div class="abc">
+      <section id="testimonials">
+        <h2>What Our Alumni Say</h2>
+        <br>
+          <p>"The college provided me with a solid foundation for my future endeavors."</p>
+          <cite>Aarav Sharma, Class of 2015</cite>
+        </br>
+        <br>
+          <p>"The faculty and staff were always supportive and encouraging."</p>
+          <cite>Priya Gupta, Class of 2010</cite>
+        </br>
+        <br>
+          <p>"I cherish the memories I made during my time at the college."</p>
+          <cite>Ravi Patel, Class of 2012</cite>
+        </br>
+        <br>
+          <p>"The college helped me develop valuable skills that I still use today."</p>
+          <cite>Neha Singh, Class of 2018</cite>
+        </br>
+        <br>
+          <p>"I'm grateful for the opportunities I had to participate in extracurricular activities."</p>
+          <cite>Rahul Verma, Class of 2019</cite>
+        </br>
+        <br>
+          <p>"The college's emphasis on community service instilled in me a sense of social responsibility."</p>
+          <cite>Sneha Reddy, Class of 2020</cite>
+        </br>
+        <br>
+          <p>"I appreciate the college's efforts to stay connected with its alumni."</p>
+          <cite>Vikram Jain, Class of 2021</cite>
+        </br>
+      </section>
+
+      <section id="recent-events">
+        <h2>Recent Events</h2>
+        <ul>
+          <li>
+            <h3>Alumni Reunion 2022</h3>
+            <p>Our annual alumni reunion was held on June 10, 2022, at the college campus.</p>
+          </li>
+          <li>
+            <h3>Guest Lecture by Dr. Rohan Mehta</h3>
+            <p>Dr. Rohan Mehta, a renowned expert in the field of artificial intelligence, delivered a guest lecture on May 20, 2022.</p>
+          </li>
+          <li>
+            <h3>College Festival 2022</h3>
+            <p>The college festival was held from March 15 to 17, 2022, and featured a range of cultural and sporting events.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+          <img class="gallery" src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D" alt="Gallery Image">
+          <img class="gallery" src="https://plus.unsplash.com/premium_photo-1691962725045-57ff9e77f0bd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29sbGVnZXxlbnwwfHwwfHx8MA%3D%3D" alt="Gallery Image">
+          <img class="gallery" src="https://images.unsplash.com/photo-1522010265321-fd346cc64d80?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbGxlZ2UlMjBnaXJsfGVufDB8fDB8fHww" alt="Gallery Image">
+        </div>
+      </section>
+
+      <section id="registration">
+        <h2>Register as an Alumni</h2>
+        <form id="alumni-registration-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+          <label for="year">Graduation Year:</label>
+          <input type="number" id="year" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
+      <section id="event-registration">
+        <h2>Register for Upcoming Events</h2>
+        <form id="event-registration-form">
+          <label for="event-name">Event Name:</label>
+          <input type="text" id="event-name" required>
+          <label for="event-date">Event Date:</label>
+          <input type="date" id="event-date" required>
+          <label for="attendees">Number of Attendees:</label>
+          <input type="number" id="attendees" required>
+          <button type="submit">Register</button>
+        </form>
+      </section>
+
+      <section id="social-media">
+        <h2>Stay Connected</h2>
+        <ul>
+          <li><a href="https://www.facebook.com/collegealumni" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com/collegealumni" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com/collegealumni" target="_blank">Instagram</a></li>
+        </ul>
+      </section>
+
+      <section id="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <ul>
+          <li>
+            <h3>How do I update my alumni information?</h3>
+            <p>Please contact us at <a href="mailto:alumni@college.uieth">alumni@college.edu</a> to update your information.</p>
+          </li>
+          <li>
+            <h3>What are the benefits of registering as an alumni?</h3>
+            <p>By registering as an alumni, you'll receive updates on upcoming events, have access to exclusive job opportunities, and be able to connect with fellow alumni.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+      <section id="newsletter">
+        <h2>Stay Informed</h2>
+        <form id="newsletter-subscription-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
