@@ -1,0 +1,319 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Navigation bar */
+  header nav {
+    background: #4CAF50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hero section */
+  #hero {
+    background: url('../images/hero.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    height: 35vw;
+    width: 150vh;
+  }
+  
+  #hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button {
+    background: #FF9800;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    margin-top: 2rem;
+    position:fixed;
+    bottom: 0px;
+    width: 100%;
+  }
+  
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: row;
+      text-align: center;
+    }
+  }
+
+  #alumni-directory {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  #search-bar {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 2rem;
+  }
+  
+  .alumni-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .card h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  
+  .card p {
+    color: #666;
+  }
+  
+  #events {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  
+  #contact {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .cta-button {
+    background: #FF9800;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+
+  #mission, #history, #objectives, #team, #achievements {
+    padding: 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #mission h2, #history h2, #objectives h2, #team h2, #achievements h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .team-cards .card {
+    width: 150px;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .team-cards .card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .team-cards .card h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+  
+  .team-cards .card p {
+    color: #666;
+  }
+  
+
+
+
+  /* General section styles */
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* Team section styling */
+  .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    width: 200px;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .gallery{
+   height: 200px;
+   width: 200px;
+  }
+  button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  /* .abc #testimonials,.abc #registration,.abc #event-registration,.abc #social-media{
+    text-align: start;
+  } */
+  
